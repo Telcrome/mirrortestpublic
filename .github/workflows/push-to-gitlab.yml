@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Push to Gitlab
-        run: git push https://oauth2:ABB5IXJE4UKOIUKYLRULYODFXJ7AM@gitlab.cc-asp.fraunhofer.de/jschaefer/mirrortest.git main:github_main
+        run: git push https://oauth2:${GITLAB_TOKEN}@gitlab.cc-asp.fraunhofer.de/jschaefer/mirrortest.git main:github_main
         # run: git push https://gitlab.cc-asp.fraunhofer.de:jschaefer/mirrortest.git
         env:
           GITLAB_TOKEN: ${{ secrets.GLTOKEN }}
