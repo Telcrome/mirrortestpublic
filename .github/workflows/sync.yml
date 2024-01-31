@@ -9,6 +9,9 @@ on:
 
 jobs:
   sync:
-    runs-on: ubuntu:22.04
+    runs-on: self-hosted
+    # runs-on: ubuntu:22.04
     steps:
+      - uses: actions/checkout@v4
       - run: echo "Hello, world!"
+      - run: ls /data
