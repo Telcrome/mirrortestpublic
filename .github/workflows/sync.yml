@@ -15,3 +15,9 @@ jobs:
       - uses: actions/checkout@v4
       - run: echo "Hello, world!"
       - run: ls /data
+      - name: Add Gitlab remote
+        run: git remote add gitlab git@gitlab.cc-asp.fraunhofer.de:jschaefer/mirrortest.git
+      - name: Push to Gitlab
+        run: git push gitlab main:github_main
+        env:
+          GITLAB_TOKEN: ${{ secrets.GLTOKEN }}
