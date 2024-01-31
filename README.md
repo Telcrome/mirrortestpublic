@@ -2,4 +2,4 @@ internal change
 
 public only addition
 
-another public thing
+another public thing2
