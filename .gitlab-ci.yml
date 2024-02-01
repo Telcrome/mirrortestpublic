@@ -10,3 +10,4 @@ update-github:
   script:
     - ls
     - echo asdf
+    - git push https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git github_main:main
