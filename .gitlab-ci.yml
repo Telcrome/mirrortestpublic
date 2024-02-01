@@ -13,4 +13,6 @@ update-github:
     - git status
     - git checkout github_main
     - git status
+    # Pull from remote
+    - git pull https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git main --rebase
     - git push https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git github_main:main
