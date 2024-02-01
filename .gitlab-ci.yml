@@ -1,3 +1,8 @@
+# Enable "asprunner" by default
+default:
+  tags:
+    - asprunner
+
 update-github:
   only:
     - github_main
