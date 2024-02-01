@@ -1,5 +1,5 @@
 internal change
 
-public only addition
+public only addition2
 
 another public thing2
