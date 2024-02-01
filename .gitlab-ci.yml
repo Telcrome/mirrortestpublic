@@ -18,9 +18,7 @@ update-github:
     # Set git config to Gitlab user
     - git config --global user.email $GITLAB_USER_EMAIL
     - git config --global user.name $CI_COMMIT_AUTHOR
-    # Pull from remote
-    - git pull https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git main --rebase
-    # The same, but pull the remote main into local github_main
-    # - git pull https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git main:github_main --rebase
-    - git push
+    # Try to resolve unexpected state
+    # - git pull https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git main --rebase
+    # - git push
     - git push https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git github_main:main
