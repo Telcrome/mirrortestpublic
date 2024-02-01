@@ -8,6 +8,7 @@ update-github:
     - github_main
   image: hub.cc-asp.fraunhofer.de/mtl-torch/mtl-torch-base:main
   script:
-    - ls
+    - ls -a
     - echo asdf
+    - git status
     - git push https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git github_main:main
