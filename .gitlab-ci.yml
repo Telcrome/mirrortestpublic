@@ -15,7 +15,7 @@ update-github:
     - git status
     # Set git config to Gitlab user
     - git config --global user.email $GITLAB_USER_EMAIL
-    - git config --global user.name $GITLAB_USER_NAME
+    - git config --global user.name $CI_COMMIT_AUTHOR
     # Pull from remote
     - git pull https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git main --rebase
     - git push https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git github_main:main
