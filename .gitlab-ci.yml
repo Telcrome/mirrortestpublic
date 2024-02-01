@@ -11,4 +11,6 @@ update-github:
     - ls -a
     - echo asdf
     - git status
+    - git checkout github_main
+    - git status
     - git push https://${testghtoken}@github.com/Telcrome/mirrortestpublic.git github_main:main
