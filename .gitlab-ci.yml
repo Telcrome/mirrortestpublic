@@ -3,4 +3,5 @@ update-github:
     - github_main
   image: hub.cc-asp.fraunhofer.de/mtl-torch/mtl-torch-base:main
   script:
-    - echo test
+    - ls
+    - echo asdf
