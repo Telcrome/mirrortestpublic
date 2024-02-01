@@ -1,6 +1,6 @@
 update-github:
   only:
     - github_main
-  image: hub.cc-asp.fraunhofer.de/mtl-torch/mtl-torch-stack:main
+  image: hub.cc-asp.fraunhofer.de/mtl-torch/mtl-torch-base:main
   script:
     - echo test
