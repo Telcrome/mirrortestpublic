@@ -13,6 +13,7 @@ update-github:
     - git status
     - git fetch --all
     - git checkout github_main
+    - git pull
     - git status
     # Set git config to Gitlab user
     - git config --global user.email $GITLAB_USER_EMAIL
